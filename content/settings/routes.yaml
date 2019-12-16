@@ -3,7 +3,10 @@ routes:
 collections:
   /:
     permalink: /{slug}/
-    template: index
+    filter: 'tag:-en'
+  /en/:
+    permalink: /en/{slug}/
+    filter: 'tag:en'
 
 taxonomies:
   tag: /tag/{slug}/
