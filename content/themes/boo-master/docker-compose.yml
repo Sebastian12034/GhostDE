@@ -1,0 +1,14 @@
+# This docker-compose.yml file is intended for easy development of this theme.
+version: '3'
+services:
+  ghost-for-theme-creators:
+    image: poeticthemes/ghost-for-theme-creators
+    ports:
+      - 80:2368
+    volumes:
+      # Mount source code into casper directory to set it as the current theme:
+      - ./:/var/lib/ghost/content/themes/casper/
+    restart: always
+    environment:
+      - url=http://localhost
+      - NODE_ENV=development
