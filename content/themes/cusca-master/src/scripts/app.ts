@@ -133,8 +133,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const closeSearchElm = document.querySelectorAll('[data-close-search]');
 
     const ghostSearch = new GhostSearch({
-        url: 'http://localhost:2368',
-        key: '4f1476d8df3a9cd277b2273b6e',
+        url: 'https://sebastianortiz.me',
+        key: '473ee2d3fa9fb88e4e4a75c4a6',
     });
 
     openSearchElm.forEach((elm): void => {
